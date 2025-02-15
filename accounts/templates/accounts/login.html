@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1 class="text-center">Login Form</h1>
+{{ form.non.fields.errors }}
+<form action="" method="POST">
+    {% csrf_token %}
+    {% for field in form %}
+    <label class="form-label" id="{{field.id_for_label}}">{{field.label}}</label>
+    {{field}}
+    {{field.errors}}
+    {% endfor %}
+<button type="submit" class="btn btn-primary m-2">login</button>
+</form>
+{% endblock body %}
