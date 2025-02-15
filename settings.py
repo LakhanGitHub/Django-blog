@@ -26,12 +26,7 @@ SECRET_KEY = 'django-insecure-u6j=yfmpn&$)%1qj86@y4u#9-&o$+i3jrz*)4^)$0f7d_ml2h8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'localhost',       # Allows requests from localhost
-    '127.0.0.1',       # Allows requests from the local machine (loopback address)
-    'https://django-blog-yzs6.onrender.com/', # Replace with your actual domain
-    'django-blog-yzs6.onrender.com',     # Allows requests from your domain without the 'www'
-    ]
+ALLOWED_HOSTS = ["django-blog-yzs6.onrender.com"]
 
 
 # Application definition
